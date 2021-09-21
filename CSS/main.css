@@ -1,3 +1,12 @@
+@media screen and (min-width: 768px) {
+  .flex-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-box > div {
+    justify-content: stretch;
+  }
+}
 body {
   margin: 0;
 }
@@ -6,7 +15,7 @@ body {
   display: flex;
   height: 100%;
   width: 100%;
-  justify-content: center;
+  flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
@@ -16,12 +25,12 @@ body {
   border-left: solid 5px black;
   border-right: solid 5px black;
   border-bottom: solid 5px black;
+  justify-content: center;
   height: 900px;
   width: 300px;
   padding: 25px;
   margin-top: 100px;
   margin-bottom: 35px;
-  justify-content: center;
 }
 #main {
   background-color: darkgray;
