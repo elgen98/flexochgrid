@@ -1,29 +1,22 @@
+body {
+  background-color: black;
+  margin: 0;
+  height: 100%;
+  padding: 20px;
+}
+.wrapper {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-rows: 100vh;
+  grid-template-columns: 15vw 30vw 30vw 17.5vw;
+}
+.wrapper > div {
+  background-color: gold;
+  border: maroon 5px outset;
+}
 @media screen and (min-width: 768px) {
   main {
     display: flex;
     flex-direction: row;
   }
-}
-body {
-  margin: 0;
-}
-.flex-box {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  height: 1500px;
-  width: 100%;
-  justify-content: center;
-  justify-content: space-around;
-  gap: 30px;
-}
-.flex-box > div {
-  background-color: gold;
-  border: 5px dotted white;
-  width: 150px;
-  margin-top: 150px;
-}
-.flex-box > .main {
-  background-color: silver;
-  width: 300px;
 }
