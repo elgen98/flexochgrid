@@ -7,16 +7,20 @@ body {
 .wrapper {
   display: grid;
   grid-column-gap: 20px;
-  grid-template-rows: 100vh;
-  grid-template-columns: 15vw 30vw 30vw 17.5vw;
+  grid-template-rows: 25vh 25vh 25vh 25vh;
+  grid-template-columns: 90vw;
 }
-.wrapper > div {
+.wrapper > div,
+nav {
+  padding: 35px;
   background-color: gold;
   border: maroon 5px outset;
 }
 @media screen and (min-width: 768px) {
-  main {
-    display: flex;
-    flex-direction: row;
+  .wrapper {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-rows: 100vh;
+    grid-template-columns: 15vw 30vw 30vw 17.5vw;
   }
 }
