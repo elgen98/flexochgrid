@@ -32,17 +32,17 @@ li {
 .nav_list {
   justify-content: space-between;
   background-image: url(/Inlämningar/Uppgift_1/Images/world-icon-png-3017.png);
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-size: contain;
 }
 .media_list {
   background-image: url(/Inlämningar/Uppgift_1/Images/movie.png);
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-size: contain;
 }
 .game_list {
-  background-image: url(/Inlämningar/Uppgift_1/Images/);
-  background-repeat: repeat-y;
+  background-image: url(/Inlämningar/Uppgift_1/Images/game-icon-png-4478.png);
+  background-repeat: no-repeat;
   background-size: contain;
 }
 ul {
@@ -62,5 +62,14 @@ ul {
   .wrapper > nav,
   section {
     display: flex;
+  }
+  .nav_list {
+    background-repeat: repeat-y;
+  }
+  .media_list {
+    background-repeat: repeat-y;
+  }
+  .game_list {
+    background-repeat: repeat-y;
   }
 }
