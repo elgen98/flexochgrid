@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-color: blue;
   height: 100%;
+  font-size: 12pt;
 }
 .flex-box {
   display: flex;
@@ -10,7 +11,6 @@ body {
   justify-content: space-around;
   gap: 30px;
   padding: 30px;
-  margin-top: 100px;
 }
 .flex-box > div {
   background-color: white;
@@ -20,11 +20,19 @@ body {
   border-bottom: solid 5px black;
   flex: 1 0 90vw;
   padding: 25px;
+  font-size: 1.1rem;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
 }
 #main {
   background-color: darkgray;
-  height: 900px;
   flex: 1 0 90vw;
+  font-size: 1.25rem;
 }
 #korv {
   width: 300px;
@@ -32,6 +40,7 @@ body {
 h1,
 h2 {
   border: 2px solid black;
+  background-color: blueviolet;
 }
 @media screen and (min-width: 768px) {
   .flex-box {
@@ -43,10 +52,10 @@ h2 {
     flex: 1 0 15vw;
     padding: 25px;
   }
+  header {
+    flex-direction: row;
+  }
   #main {
     flex: 2 0 30vw;
-  }
-  #korv {
-    width: 300px;
   }
 }
