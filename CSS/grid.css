@@ -17,16 +17,30 @@ section {
   display: flex inline;
   flex-direction: column;
   padding: 15px;
-  background-color: gold;
+  background-color: burlywood;
   border: maroon 5px outset;
   border-radius: 25px;
 }
 h3,
-a,
 li {
   color: maroon;
-  background-color: white;
+  background-color: grey;
   border: maroon 1px solid;
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  background-color: white;
+  border: blue 1px solid;
+  border-radius: 5px;
+}
+a:hover{
+  color:white;
+  font-weight: bold;
+  background-color:blue;
+  border:white 1px solid;
   border-radius: 5px;
 }
 .nav_list {
