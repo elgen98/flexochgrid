@@ -73,4 +73,7 @@ ul {
   .game_list {
     background-repeat: repeat-y;
   }
+  ul {
+    height: 100%;
+  }
 }
