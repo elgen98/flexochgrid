@@ -3,18 +3,54 @@ body {
   margin: 0;
   height: 100%;
   padding: 20px;
+  font-size: 12pt;
 }
 .wrapper {
   display: grid;
   grid-column-gap: 20px;
-  grid-template-rows: 25vh 25vh 25vh 25vh;
+  grid-template-rows: 500px 500px 500px 500px;
   grid-template-columns: 90vw;
+  gap: 50px;
 }
-.wrapper > div,
-nav {
+.wrapper > nav,
+section {
+  display: flex inline;
+  flex-direction: column;
   padding: 35px;
   background-color: gold;
   border: maroon 5px outset;
+  border-radius: 25px;
+}
+h3,
+a,
+li {
+  color: maroon;
+  background-color: white;
+  border: maroon 1px solid;
+  border-radius: 5px;
+}
+.nav_list {
+  justify-content: space-between;
+  background-image: url(/Inlämningar/Uppgift_1/Images/world-icon-png-3017.png);
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+.media_list {
+  background-image: url(/Inlämningar/Uppgift_1/Images/movie.png);
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+.game_list {
+  background-image: url(/Inlämningar/Uppgift_1/Images/);
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 25px;
+  align-items: flex-start;
 }
 @media screen and (min-width: 768px) {
   .wrapper {
@@ -22,5 +58,9 @@ nav {
     grid-column-gap: 20px;
     grid-template-rows: 100vh;
     grid-template-columns: 15vw 30vw 30vw 17.5vw;
+  }
+  .wrapper > nav,
+  section {
+    display: flex;
   }
 }
