@@ -31,17 +31,17 @@ li {
 }
 .nav_list {
   justify-content: space-between;
-  background-image: url(/Inlämningar/Uppgift_1/Images/world-icon-png-3017.png);
+  background-image: url(../Images/world-icon-png-3017.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .media_list {
-  background-image: url(/Inlämningar/Uppgift_1/Images/movie.png);
+  background-image: url(../Images/movie.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .game_list {
-  background-image: url(/Inlämningar/Uppgift_1/Images/game-icon-png-4478.png);
+  background-image: url(../Images/game-icon-png-4478.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
