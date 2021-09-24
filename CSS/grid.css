@@ -10,12 +10,15 @@ body {
   grid-column-gap: 20px;
   grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
   grid-template-columns: 90vw;
+  grid-template-areas:
+    "links"
+    "movie"
+    "show"
+    "game";
   gap: 50px;
 }
 .wrapper > nav,
 section {
-  display: flex inline;
-  flex-direction: column;
   padding: 15px;
   background-color: burlywood;
   border: maroon 5px outset;
@@ -36,20 +39,26 @@ a {
   border: blue 1px solid;
   border-radius: 5px;
 }
-a:hover{
-  color:white;
+a:hover {
+  color: white;
   font-weight: bold;
-  background-color:blue;
-  border:white 1px solid;
+  background-color: blue;
+  border: white 1px solid;
   border-radius: 5px;
 }
 .nav_list {
+  grid-area: "link";
   justify-content: space-between;
   background-image: url(../Images/world-icon-png-3017.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .media_list {
+  background-image: url(../Images/movie.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.show-list {
   background-image: url(../Images/movie.png);
   background-repeat: no-repeat;
   background-size: contain;
