@@ -15,7 +15,7 @@ body {
     "movie"
     "show"
     "game";
-  gap: 50px;
+  gap: 25px;
 }
 .wrapper > nav,
 section {

@@ -6,7 +6,7 @@ body {
 }
 .flex-box {
   display: flex;
-  flex: 1 0 100%;
+  flex: 1 0 100vh;
   flex-flow: column wrap;
   justify-content: space-around;
   gap: 30px;
