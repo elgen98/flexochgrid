@@ -49,32 +49,33 @@ a:hover {
 .nav_list {
   grid-area: "link";
   justify-content: space-between;
+  align-items: flex-start;
   background-image: url(../Images/world-icon-png-3017.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .media_list {
+  grid-area: "movie";
   background-image: url(../Images/movie.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
-.show-list {
+.show_list {
+  grid-area: "show";
   background-image: url(../Images/movie.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .game_list {
+  grid-area: "game";
   background-image: url(../Images/game-icon-png-4478.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
-ul {
-  display: flex;
-  height: 0.25fr;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 25px;
+ul,
+nav {
+  display: grid;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .wrapper {
@@ -84,14 +85,13 @@ ul {
     grid-template-columns: 15vw 30vw 30vw 20vw;
     gap: 10px;
   }
-  .wrapper > nav,
-  section {
-    display: flex;
-  }
   .nav_list {
     background-repeat: repeat-y;
   }
   .media_list {
+    background-repeat: repeat-y;
+  }
+  .show_list {
     background-repeat: repeat-y;
   }
   .game_list {
